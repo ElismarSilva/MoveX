@@ -19,7 +19,7 @@ Este projeto permite controlar robôs remotamente através de uma interface web 
 
 ## Imagem do App
 
-<img src="images/app.png" alt="Interface de controle do robô" width="300">
+<img src="images/app.jpg" alt="Interface de controle do robô" width="300">
 
 ## Estrutura do Projeto
 
