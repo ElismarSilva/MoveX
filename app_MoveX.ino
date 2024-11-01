@@ -222,13 +222,6 @@
     server.send(200, "text/plain", "Sliders atualizados");
   }
 
-  // // Função para definir o comando
-  // void definirComando(String novoComando) {
-  //   comandoRecebido = novoComando;  // Define o comando recebido
-  //   // Serial.print("Comando recebido: ");
-  //   // Serial.println(comandoRecebido);
-  // }
-
   // Função para servir arquivos do sistema de arquivos SPIFFS
   void enviarArquivo(const char* caminho) {
     File file = SPIFFS.open(caminho, "r");  // Abre o arquivo para leitura
