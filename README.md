@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este projeto permite controlar robôs remotamente através de uma interface web usando um ESP32. A aplicação web possibilita o controle do movimento do robô (frente, trás, esquerda, direita) e também permite o ajuste de componentes específicos, como garras e velocidade de motores, utilizando sliders.
+Este projeto permite controlar robôs remotamente através de uma interface web usando um ESP8266. A aplicação web possibilita o controle do movimento do robô (frente, trás, esquerda, direita) e também permite o ajuste de componentes específicos, como garras e velocidade de motores, utilizando sliders.
 
 ## Autor
 
