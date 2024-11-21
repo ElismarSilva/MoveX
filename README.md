@@ -76,9 +76,27 @@ Este projeto permite controlar robôs remotamente através de uma interface web 
 - Interface web para controle do robô, acessada via um ponto de acesso Wi-Fi criado pelo ESP32.
 - Controle via comandos HTTP, tornando o uso flexível e fácil de integrar com outros dispositivos.
 
+
+
 ## Imagem do App
 
 <img src="images/app.jpg" alt="Interface de controle do robô" width="250" height="450">
+
+
+## Conexão WiFI 
+
+- Abra as configurações WiFI
+- Selecione a opção Movex
+- Desative os dados móveis
+
+<img src="images/Wifi.jpg" alt="Conexão WiFi" width="350" height="550">
+
+## Endereço IP
+
+- Após conectar ao WiFI do ESP8266, abra o seu navegador e digite o IP 192.168.4.1/app
+
+<img src="images/IP.jpg" alt="Endereço IP" width="700" height="150">
+
 
 ## Estrutura do Projeto
 
