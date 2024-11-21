@@ -1,4 +1,4 @@
-# App de Controle de Robôs com ESP32
+# App de Controle de Robôs com ESP8266
 
 ## Visão Geral
 
@@ -122,11 +122,30 @@ Este projeto permite controlar robôs remotamente através de uma interface web 
 
 ```cpp
 void frente() {
-  Serial.println("Movendo para frente");
-  moverRobo(180, 0, "Movendo para frente");
+  Serial.println("Frente");
+  moverRobo(180, 0, "Movendo para frente"); // O robô se movimenta para frente
 }
 
 void tras() {
-  Serial.println("Movendo para trás");
-  moverRobo(0, 180, "Movendo para trás");
+  Serial.println("Trás");
+  moverRobo(0, 180, "Movendo para trás"); // O robô se movimenta para trás
 }
+
+void esquerda() {
+  Serial.println("Esquerda");
+  moverRobo(0, 0, "");
+  server.send(200, "text/plain", ""); // O robô se movimenta para esquerda
+}
+
+void direita() {
+  Serial.println("Direita");
+  moverRobo(180, 180, "");
+  server.send(200, "text/plain", ""); // O robô se movimenta para direita
+}
+
+void parado() {
+  Serial.println("Parado");
+  moverRobo(90, 90, "Parado");
+  server.send(200, "text/plain", "Parado"); // O robô fica parado
+}
+
