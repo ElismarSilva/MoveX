@@ -89,13 +89,13 @@ Este projeto permite controlar robôs remotamente através de uma interface web 
 - Selecione a opção Movex
 - Desative os dados móveis
 
-<img src="images/Wifi.jpg" alt="Conexão WiFi" width="350" height="550">
+<img src="images/Wifi.jpg" alt="Conexão WiFi" width="250" height="450">
 
 ## Endereço IP
 
 - Após conectar ao WiFI do ESP8266, abra o seu navegador e digite o IP 192.168.4.1/app
 
-<img src="images/IP.jpg" alt="Endereço IP" width="700" height="150">
+<img src="images/IP.jpg" alt="Endereço IP" width="550" height="150">
 
 
 ## Estrutura do Projeto
