@@ -10,6 +10,65 @@ Este projeto permite controlar robôs remotamente através de uma interface web 
 - **Data:** 14 de outubro de 2024
 - **Versão:** 1.0
 
+### Passos para Instalar o Plugin
+
+1. **Baixar o Plugin ESP8266FS**  
+   - Acesse o repositório oficial no GitHub:  
+     [ESP8266FS Plugin](https://github.com/esp8266/arduino-esp8266fs-plugin).
+   - Faça o download do arquivo `.zip` do plugin.
+
+2. **Instalar o Plugin**  
+   - Extraia o arquivo `.zip`.  
+   - Localize a pasta **`tools`** no diretório de instalação do Arduino IDE:  
+     - **Windows**: `C:\Users\<Seu_Usuário>\Documents\Arduino\tools`  
+     - **Linux/macOS**: `~/Arduino/tools`  
+   - Se a pasta `tools` não existir, crie-a.  
+   - Copie a pasta extraída do plugin para dentro de `tools`.  
+     - O caminho final deve ser algo como:
+
+       ferramentas/ESP8266FS/ferramenta/esp8266fs.jar
+       
+3. **Reinicie o Arduino IDE**  
+   - Após a instalação, reinicie o Arduino IDE para que o plugin seja carregado.
+
+4. **Selecionar a Placa ESP8266**  
+   - Abra o Arduino IDE e vá em:  
+     `Ferramentas > Placa > ESP8266 > Modelo da sua Placa`  
+     (ex.: NodeMCU 1.0, ESP-01, Wemos D1 Mini).
+
+5. **Abrir a Ferramenta de Upload SPIFFS**  
+   - No menu do Arduino IDE, vá em:  
+     `Ferramentas > ESP8266 Sketch Data Upload`.  
+   - Se a opção não aparecer, verifique se o plugin foi instalado corretamente.
+
+---
+
+### Como Subir Imagens para a Flash
+
+1. **Organizar os Arquivos**  
+   - Crie uma pasta chamada **`data`** no mesmo diretório onde está o código do seu projeto.  
+     Exemplo de estrutura de pastas:
+
+     /MeuProjeto/ |-- MeuProjeto.ino |-- data/ |-- frente.png |-- esquerda.png |-- direita.png |-- tras.png
+     
+2. **Fazer o Upload**  
+   - Abra o projeto no Arduino IDE.  
+   - Certifique-se de que a placa ESP8266 está conectada e selecionada.  
+   - Vá em:  
+     `Ferramentas > ESP8266 Sketch Data Upload`.  
+     O Arduino IDE fará o upload dos arquivos da pasta `data` para o sistema de arquivos SPIFFS do ESP8266.
+
+3. **Verificar os Arquivos**  
+   - No código, utilize funções da biblioteca **`FS.h`** para acessar e servir os arquivos armazenados.
+
+---
+
+### Observações
+
+- Certifique-se de que o sistema SPIFFS esteja ativado e configurado corretamente no seu projeto.  
+- Caso encontre problemas, verifique o log no monitor serial para possíveis mensagens de erro.
+ depois do exemplo de codigo esta tudo celecionado eu nao quer
+
 ## Funcionalidades
 
 - Controle de movimento: Frente, Trás, Esquerda, Direita e Parado.
